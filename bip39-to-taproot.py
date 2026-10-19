@@ -219,7 +219,8 @@ def main() -> None:
         {"desc": change_desc, "timestamp": ts, "active": True, "internal": True},
     ]
 
-    print(f"Derivation path: m/{path.replace('h', "'")}")
+    display_path = path.replace("h", "'")
+    print(f"Derivation path: m/{display_path}")
     print(f"\nReceive descriptor:\n{receive_desc}")
     print(f"\nChange descriptor:\n{change_desc}")
     print("\nBitcoin Core command:")
